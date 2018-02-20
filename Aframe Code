@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+<!IT WAS REALLY HARD MAKING THIS CODE READABLE BECAUSE AFRAME KEPT GLITCHING AND WASNT LETTING CHANGE COLORS OR CREATE ASSEST.> 
+<!THERE WERE EVEN TIMES WHEN I TRIED CREATING ASSETS AND NAMING EVERYTHING, BUT THE ITEMS WOULD TURN BLACK AND GLITCH OUT!>
 <html>
   <head>
     <title>Hello, WebVR! - A-Frame</title>
@@ -12,9 +13,10 @@
     
     <a-scene>
      <a-assets>
-      <a-asset-item id="object" src="https://cdn.glitch.com/0c455151-2e82-4a55-8abb-0c9127ac449e%2Fsofa.obj?1518407015317"></a-asset-item>
-      <a-asset-item id="material" src="https://cdn.glitch.com/0c455151-2e82-4a55-8abb-0c9127ac449e%2Fsofa.mtl?1518407010813"></a-asset-item>
-      <a-asset-item id="TV" src="https://cdn.glitch.com/e6d99287-afea-45c8-9132-ae1efc6eccbc%2Fwatch%5B1%5D?1518896643422"></a-asset-item>
+      <a-asset-item id="object" src="https://cdn.glitch.com/e6d99287-afea-45c8-9132-ae1efc6eccbc%2Fsofa.obj?1519079705662"></a-asset-item>
+      <a-asset-item id="material" src="https://cdn.glitch.com/e6d99287-afea-45c8-9132-ae1efc6eccbc%2Fsofa.mtl?1519079698295"></a-asset-item>
+      <a-asset-item id="TV" src="https://cdn.glitch.com/e6d99287-afea-45c8-9132-ae1efc6eccbc%2Fgiphy.mp4?1519022522901"></a-asset-item>
+      <a-asset-item id="Speaker" src="https://cdn.glitch.com/e6d99287-afea-45c8-9132-ae1efc6eccbc%2Fspeaker.JPG?1519011211003"></a-asset-item>
       </a-assets>
       <a-entity camera="active:false" look-controls="" wasd-controls="" position="-7.131 2.507 2.987" rotation="-12.443999999999999 -102.25 -2.99" data-aframe-inspector-original-camera="" data-aframe-inspector="default-camera">
             <a-cursor raycaster="" cursor=""></a-cursor>
@@ -22,23 +24,56 @@
       <a-entity camera="active: true" look-controls wasd-controls position="0 3 0" data-aframe-default-camera>
             <a-cursor></a-cursor>
       </a-entity>
-      <a-obj-model src="#object" mtl="#material" position="1.488 0 2.282" scale="0.09999999999999998 0.13999999999999999 0.07"></a-obj-model>
+      
+      <a-entity light="angle:3.84;type:spot;intensity:2.5;castShadow:true" position="-1.607 5.658 3.86" data-aframe-default-light="" aframe-injected="" rotation="-10 -200 3.02" scale="-0.14000000000000007 -1.5099999999999998 4.78">
+      <a-animation attribute="rotation" dur="3000" to="-35 -200 3.02" repeat="indefinite"></a-animation>
+      </a-entity>
+      
+      <a-entity light="angle:3.84;intensity:2.5;type:spot;castShadow:true" position="-2.372 5.658 3.86" data-aframe-default-light="" aframe-injected="" rotation="-100.35 -200 -1.8599999999999999" scale="-0.14000000000000007 -1.5099999999999998 4.78">
+      <a-animation attribute="rotation" dur="3000" to="-117 -185 -1.86" repeat="indefinite"></a-animation>
+      </a-entity>
+      
+      <a-entity light="angle:3.84;intensity:2.5;type:spot;castShadow:true" position="-1.672 2.271 1.868" data-aframe-default-light="" aframe-injected="" rotation="75 -185.723 -1.86" scale="-0.14 -1.51 4.78">
+      <a-animation attribute="rotation" dur="3000" to="110 -185.723 -1.86" repeat="indefinite"></a-animation>
+      </a-entity>
+      
+      <a-entity light="angle:3.8399999999999994;type:spot;intensity:2.5;castShadow:true" position="2.456 4.745 3.86" data-aframe-default-light="" aframe-injected="" rotation="2.039999999999999 -111.63 3.02" scale="-0.14000000000000007 -1.5099999999999998 4.78">
+      <a-animation attribute="rotation"
+                   dur="3000"
+                   to="-25 -111.63 3.02"
+                   repeat="indefinite"></a-animation>
+      </a-entity>
+      
+      
+      <a-box src="https://cdn.glitch.com/e6d99287-afea-45c8-9132-ae1efc6eccbc%2FDoor.JPG?1519017497822" position="-4.419 2.827 -11.267" color="7BC8A4" height="1" width="0.5" length="0.5" shadow="" geometry="depth:0.15;height:4;width:2.5"></a-box>
+      
+      <a-box src="https://cdn.glitch.com/e6d99287-afea-45c8-9132-ae1efc6eccbc%2FWolf%20Canvas.JPG?1519031624095" position="-6.917 4.25 -4.345" color="7BC8A4" height="1" width="0.5" length="0.5" shadow="" geometry="depth:4;width:0.1;height:2"></a-box>
+      
+      <a-obj-model src="#object" mtl="#material" color="brown" position="1.488 0 2.282" scale="0.09999999999999998 0.13999999999999999 0.07"></a-obj-model>
+      <a-box src="https://cdn.glitch.com/0c455151-2e82-4a55-8abb-0c9127ac449e%2Fblack.jpg?1518504488890" position="-0.594 1.335 1.883" color="7BC8A4" height="1" width="0.5" length="0.5" shadow="" geometry="width:0.31;depth:2.9;height:0.98"></a-box>
+      <a-box src="https://cdn.glitch.com/0c455151-2e82-4a55-8abb-0c9127ac449e%2Fblack.jpg?1518504488890" position="0.975 1.335 0.588" color="7BC8A4" height="1" width="0.5" length="0.5" shadow="" geometry="depth:3;height:0.98;width:0.31" rotation="0 90 0"></a-box>
+      
       <a-box src="https://cdn.glitch.com/0c455151-2e82-4a55-8abb-0c9127ac449e%2FDark-Hardwood-Floor-Background.jpg?1518070285885" position="-1 0.844 -1.303" height="0.3" width="10" length="10" shadow="" geometry="width:12;depth:20;height:0.03"></a-box>      
-      <a-box position="-0.987 3.858 -11.248" height="0.3" width="10" length="10" shadow="" geometry="depth:6;height:0.03;width:12" rotation="90 0 0"></a-box>
-      <a-box position="5.002 3.858 -1.336" height="0.3" width="10" length="10" shadow="" geometry="depth:6;height:20;width:0.03" rotation="90 0 0" material=""></a-box>
-      <a-box position="-6.935 3.858 -1.296" height="0.3" width="10" length="10" shadow="" geometry="depth:6;height:20;width:0.03" rotation="90 0 0" material=""></a-box>
-      <a-box position="-0.987 3.858 8.651" height="0.3" width="10" length="10" shadow="" geometry="depth:6;height:0.03;width:12" rotation="90 0 0" material=""></a-box>
+      <a-box src="https://cdn.glitch.com/e6d99287-afea-45c8-9132-ae1efc6eccbc%2Fbeige.jpg?1519081168659" position="-0.987 3.858 -11.248" height="0.3" width="10" length="10" shadow="" geometry="depth:6;height:0.03;width:12" rotation="90 0 0"></a-box>
+      <a-box src="https://cdn.glitch.com/e6d99287-afea-45c8-9132-ae1efc6eccbc%2Fred%20wallpapper.jpg?1519081601651" position="5.002 3.858 -1.336" height="0.3" width="10" length="10" shadow="" geometry="depth:6;height:20;width:0.03" rotation="90 0 0" color="#FFF" material=""></a-box>
+      <a-box src="https://cdn.glitch.com/e6d99287-afea-45c8-9132-ae1efc6eccbc%2Fbeige.jpg?1519081168659" position="-6.935 3.858 -1.296" height="0.3" width="10" length="10" shadow="" geometry="depth:6;height:20;width:0.03" rotation="90 0 0" material=""></a-box>
+      <a-box src="https://cdn.glitch.com/e6d99287-afea-45c8-9132-ae1efc6eccbc%2Fbeige.jpg?1519081168659" position="-0.987 3.858 8.651" height="0.3" width="10" length="10" shadow="" geometry="depth:6;height:0.03;width:12" rotation="90 0 0" material=""></a-box>
       <a-box position="-0.977 6.905 -1.401" height="0.3" width="10" length="10" shadow="" geometry="width:12;depth:20;height:0.03" material=""></a-box>
-      <a-box position="0 1.24 -2" color="7BC8A4" height="1" width="0.5" length="0.5" shadow="" geometry="height:0.75;width:0.15;depth:0.15"></a-box>
-      <a-box position="-1 1.24 -2" color="7BC8A4" height="1" width="0.5" length="0.5" shadow="" geometry="height:0.75;width:0.15;depth:0.15"></a-box>
-      <a-box position="0 1.24 -1.304" color="7BC8A4" height="1" width="0.5" length="0.5" shadow="" geometry="height:0.75;width:0.15;depth:0.15"></a-box>      
-      <a-box position="-1 1.24 -1.304" color="7BC8A4" height="1" width="0.5" length="0.5" shadow="" geometry="height:0.75;width:0.15;depth:0.15"></a-box>
-      <a-box position="-1.857 3.745 -7.211" color="7BC8A4" height="1" width="0.5" length="0.5" shadow="" geometry="depth:8;height:6"></a-box>
+      <a-box src="https://cdn.glitch.com/e6d99287-afea-45c8-9132-ae1efc6eccbc%2Fbeige.jpg?1519081168659" position="-1.857 3.745 -7.211" color="7BC8A4" height="1" width="0.5" length="0.5" shadow="" geometry="depth:8;height:6"></a-box>
       <a-plane position="0 0 -1.144" rotation="-90 0 0" width="15" height="15" color="#7BC8A4" shadow=""></a-plane>      
       <a-sky color="#ECECEC"></a-sky>
-      <a-box src="https://cdn.glitch.com/0c455151-2e82-4a55-8abb-0c9127ac449e%2Fahsap-pencere.jpg?1518226047200" position="-6.928 2.164 3.164" color="7BC8A4" height="1" width="0.5" length="0.5" shadow="" geometry="depth:5;height:3;width:0.125" material="color:#ffffff"></a-box>
-      <a-box src="#TV" position="5.04 4.229 1.797" autoplay="TRUE" muted="TRUE" color="7BC8A4" height="1" width="0.5" length="0.5" shadow="" geometry="height:4;depth:2.5;width:0.15" material="color:#ffffff" rotation="-90 0 0"></a-box>
+      <a-box src="https://cdn.glitch.com/0c455151-2e82-4a55-8abb-0c9127ac449e%2Fahsap-pencere.jpg?1518226047200" position="-6.928 2.742 3.164" color="7BC8A4" height="1" width="0.5" length="0.5" shadow="" geometry="height:4.03;width:0.125;depth:5" material="color:#ffffff"></a-box>
+      
+      <a-box src="#TV" position="5.04 4.229 1.797" autoplay="TRUE" muted="TRUE" color="7BC8A4" height="1" width="0.5" length="0.5" shadow="" geometry="height:2.5;depth:4;width:0.15" material="color:#ffffff" rotation="0 0 0"></a-box>
     
+      
+      <a-entity position="0.107 0 0.445">
+        <a-box src="https://cdn.glitch.com/e6d99287-afea-45c8-9132-ae1efc6eccbc%2FAnalyssa%20pic.JPG?1519083324629" position="-2.191 4.313 -8.734" color="7BC8A4" height="1" width="0.5" length="0.5" shadow="" geometry="depth:1.1400000000000001;height:1.08;width:0.15"></a-box>
+        <a-box src="https://cdn.glitch.com/e6d99287-afea-45c8-9132-ae1efc6eccbc%2FMe%2C%20nathan%2C%20and%20jordan%20pic.JPG?1519083333082" position="-2.191 3.82 -7.345" color="7BC8A4" height="1" width="0.5" length="0.5" shadow="" geometry="height:1.08;width:0.15;depth:1.14"></a-box>
+        <a-box src="https://cdn.glitch.com/e6d99287-afea-45c8-9132-ae1efc6eccbc%2FAspen%20Picture.PNG?1519083327018" position="-2.191 3.294 -6.004" color="7BC8A4" height="1" width="0.5" length="0.5" shadow="" geometry="depth:1.1400000000000001;height:1.08;width:0.15"></a-box>
+        
+      </a-entity>
+      
       
       <a-box position="4.817 2.007 0.038" color="7BC8A4" height="1" width="0.5" length="0.5" shadow="" geometry="height:0.65;depth:0.85" material="color:#000000"></a-box>
       <a-box position="4.817 2.007 0.94" color="7BC8A4" height="1" width="0.5" length="0.5" shadow="" geometry="depth:0.85;height:0.65" material="color:#000000"></a-box>
@@ -47,17 +82,38 @@
       <a-box position="4.817 2.007 3.688" color="7BC8A4" height="1" width="0.5" length="0.5" shadow="" geometry="depth:0.85;height:0.65" material="color:#000000"></a-box>
       <a-box position="4.817 2.007 4.637" color="7BC8A4" height="1" width="0.5" length="0.5" shadow="" geometry="depth:0.85;height:0.65" material="color:#000000"></a-box>
       <a-box position="4.817 4.76 4.676" color="7BC8A4" height="1" width="0.5" length="0.5" shadow="" geometry="height:5;width:0.125;depth:0.85" material="color:#000000"></a-box>
-      <a-box position="4.817 6.421 3.878" color="7BC8A4" height="1" width="0.5" length="0.5" shadow="" geometry="depth:0.85;height:0.65" material="color:#000000"></a-box>
-      <a-box position="4.817 6.421 2.96" color="7BC8A4" height="1" width="0.5" length="0.5" shadow="" geometry="depth:0.85;height:0.65" material="color:#000000"></a-box>
-      <a-box position="4.817 6.421 2.042" color="7BC8A4" height="1" width="0.5" length="0.5" shadow="" geometry="depth:0.85;height:0.65" material="color:#000000"></a-box>
-      <a-box position="4.817 6.421 1.144" color="7BC8A4" height="1" width="0.5" length="0.5" shadow="" geometry="depth:0.85;height:0.65" material="color:#000000"></a-box>
-      <a-box position="4.817 6.421 0.236" color="7BC8A4" height="1" width="0.5" length="0.5" shadow="" geometry="depth:0.85;height:0.65" material="color:#000000"></a-box>
-      <a-box position="4.574 3.226 5.833" color="#c0c0c0" height="1" width="0.5" length="0.5" shadow="" geometry="depth:3;height:0.125"></a-box>
-      <a-box position="4.574 4.404 6.595" color="#c0c0c0" height="1" width="0.5" length="0.5" shadow="" geometry="depth:3;height:0.125"></a-box>
-      <a-box position="4.574 5.518 5.833" color="#c0c0c0" height="1" width="0.5" length="0.5" shadow="" geometry="depth:3;height:0.125"></a-box>
-      <a-box src="https://cdn.glitch.com/0c455151-2e82-4a55-8abb-0c9127ac449e%2Fbook.JPG?1518372988306" position="4.511 3.694 5.413" color="7BC8A4" height="1" width="0.5" length="0.5" shadow="" geometry="width:0.35;height:0.6;depth:0.15"></a-box>
-      <a-box src="https://cdn.glitch.com/0c455151-2e82-4a55-8abb-0c9127ac449e%2Fbooks.JPG?1518372960316" position="4.394 3.655 5.956" color="7BC8A4" height="1" width="0.5" length="0.5" shadow="" geometry="depth:1.2;height:0.75;width:0.15"></a-box>
-      <a-box src="https://cdn.glitch.com/0c455151-2e82-4a55-8abb-0c9127ac449e%2FIMG_2844.JPG?1518403299360" position="4.654 4.757 6.345" color="7BC8A4" height="1" width="0.5" length="0.5" shadow="" geometry="height:0.6;depth:0.5;width:0.15"></a-box>
+      
+      
+      <a-box src="https://cdn.glitch.com/e6d99287-afea-45c8-9132-ae1efc6eccbc%2Fspeaker.JPG?1519012595127" position="4.931 4.12 -0.911" color="7BC8A4" height="1" width="0.5" length="0.5" shadow="" geometry="depth:0.3;height:2.5;width:0.15" sound="src: url(https://cdn.glitch.com/e6d99287-afea-45c8-9132-ae1efc6eccbc%2FBreathe%20Carolina%20x%20IZII-%20ECHO%20(LET%20GO)%20%5BOfficial%20Music%20Video%5D.mp3?1519016390752); on: click"></a-box>
+      <a-box src="https://cdn.glitch.com/e6d99287-afea-45c8-9132-ae1efc6eccbc%2Fspeaker.JPG?1519012595127" position="4.727 4.12 4.731" color="7BC8A4" height="1" width="0.5" length="0.5" shadow="" geometry="depth:0.3;height:2.5;width:0.15" sound="src: url(https://cdn.glitch.com/e6d99287-afea-45c8-9132-ae1efc6eccbc%2FBreathe%20Carolina%20x%20IZII-%20ECHO%20(LET%20GO)%20%5BOfficial%20Music%20Video%5D.mp3?1519016390752); on: click"></a-box>
+      
+      <a-entity position="-1.148 -0.115 12.959" rotation="0 90 0" scale="1 1 0.75">
+          <a-box position="4.574 3.226 5.833" color="#c0c0c0" height="1" width="0.5" length="0.5" shadow="" geometry="depth:3;height:0.125"></a-box>
+          <a-box position="4.574 4.404 6.595" color="#c0c0c0" height="1" width="0.5" length="0.5" shadow="" geometry="depth:3;height:0.125"></a-box>
+          <a-box position="4.574 5.518 5.833" color="#c0c0c0" height="1" width="0.5" length="0.5" shadow="" geometry="depth:3;height:0.125"></a-box>
+          <a-box src="https://cdn.glitch.com/0c455151-2e82-4a55-8abb-0c9127ac449e%2Fbook.JPG?1518372988306" position="4.511 3.694 5.413" color="7BC8A4" height="1" width="0.5" length="0.5" shadow="" geometry="depth:0.15;height:0.6;width:0.35"></a-box>
+          <a-box src="https://cdn.glitch.com/0c455151-2e82-4a55-8abb-0c9127ac449e%2Fbooks.JPG?1518372960316" position="4.394 3.655 5.956" color="7BC8A4" height="1" width="0.5" length="0.5" shadow="" geometry="depth:1.2;height:0.75;width:0.15"></a-box>
+          <a-box src="https://cdn.glitch.com/0c455151-2e82-4a55-8abb-0c9127ac449e%2FIMG_2844.JPG?1518403299360" position="4.654 4.757 6.345" color="7BC8A4" height="1" width="0.5" length="0.5" shadow="" geometry="depth:1.33;width:0.14;height:0.6"></a-box>
+      </a-entity>
+      
+      <a-box src="https://cdn.glitch.com/e6d99287-afea-45c8-9132-ae1efc6eccbc%2Fwindow%20curtain.JPG?1519019411982" position="0.259 3.469 8.604" color="7BC8A4" height="1" width="0.5" length="0.5" shadow="" geometry="depth:0.15;height:5.3;width:1">
+      <a-animation attribute="width"
+                   from="1" 
+                   to="2.5"
+                   begin="click"></a-animation>
+                   
+      </a-box>
+      <a-box src="https://cdn.glitch.com/e6d99287-afea-45c8-9132-ae1efc6eccbc%2Fwindow%20curtain.JPG?1519019411982" position="-3.286 3.469 8.604" color="7BC8A4" height="1" width="0.5" length="0.5" shadow="" geometry="depth:0.15;height:5.3;width:1">
+      <a-animation attribute="width"
+                   from="1" 
+                   to="2.5"
+                   begin="click"></a-animation>
+      </a-box>
+      
+      
+      <a-box src="https://cdn.glitch.com/e6d99287-afea-45c8-9132-ae1efc6eccbc%2Fwindow.JPG?1519017956176" position="-1.473 3.968 8.695" color="7BC8A4" height="1" width="0.5" length="0.5" shadow="" geometry="height:4;width:3;depth:0.15"></a-box>
+      
+      
       <a-box position="4.905 2.932 1.808" color="7BC8A4" height="1" width="0.5" length="0.5" shadow="" geometry="segmentsHeight:3;depth:4;width:0.2;height:0.15" material="color:#000000"></a-box>
       <a-box position="4.9 4.242 3.87" color="7BC8A4" height="1" width="0.5" length="0.5" shadow="" geometry="depth:0.15;height:2.79;width:0.2" material="color:#000000"></a-box>
       <a-box position="4.9 4.242 -0.213" color="7BC8A4" height="1" width="0.5" length="0.5" shadow="" geometry="height:2.79;depth:0.15;width:0.2" material="color:#000000"></a-box>
@@ -69,15 +125,33 @@
       <a-box src="https://cdn.glitch.com/0c455151-2e82-4a55-8abb-0c9127ac449e%2FAnd.JPG?1518508282581" position="-1.745 3.941 -6.137" color="7BC8A4" height="1" width="0.5" length="0.5" shadow="" geometry="depth:0.29;height:1.4;width:1" rotation="0 90 0"></a-box>
       <a-box src="https://cdn.glitch.com/0c455151-2e82-4a55-8abb-0c9127ac449e%2FEatDrink.JPG?1518508287927" position="-1.745 3.941 -7.282" color="7BC8A4" height="1" width="0.5" length="0.5" shadow="" geometry="depth:0.29;height:1.4;width:1" rotation="0 90 0"></a-box>
       <a-entity position="-0.78 -0.03 -2.37">
-      <a-box src="https://cdn.glitch.com/0c455151-2e82-4a55-8abb-0c9127ac449e%2Furl.jpg?1518407642926" position="-2.907 1.401 5.716" color="7BC8A4" height="1" width="0.5" length="0.5" shadow="" geometry="depth:0.33;height:0.15;width:1.3" rotation="0 0 60"></a-box>
-      <a-box src="https://cdn.glitch.com/0c455151-2e82-4a55-8abb-0c9127ac449e%2Furl.jpg?1518407642926" position="-2.907 1.401 5.716" color="7BC8A4" height="1" width="0.5" length="0.5" shadow="" geometry="depth:0.33;height:0.15;width:1.3" rotation="0 0 -60"></a-box>
-      <a-box src="https://cdn.glitch.com/0c455151-2e82-4a55-8abb-0c9127ac449e%2Furl.jpg?1518407642926" position="-2.907 1.401 3.716" color="7BC8A4" height="1" width="0.5" length="0.5" shadow="" geometry="depth:0.33;height:0.15;width:1.3" rotation="0 0 60"></a-box>
-      <a-box src="https://cdn.glitch.com/0c455151-2e82-4a55-8abb-0c9127ac449e%2Furl.jpg?1518407642926" position="-2.907 1.401 3.716" color="7BC8A4" height="1" width="0.5" length="0.5" shadow="" geometry="depth:0.33;height:0.15;width:1.3" rotation="0 0 -60"></a-box>
-      <a-box src="https://cdn.glitch.com/0c455151-2e82-4a55-8abb-0c9127ac449e%2Fwood.jpg?1518761241758" position="-2.892 1.961 4.702" color="7BC8A4" height="1" width="0.5" length="0.5" shadow="" geometry="depth:3.1;width:0.15" rotation="0 0 90"></a-box>
-      <a-box src="https://cdn.glitch.com/0c455151-2e82-4a55-8abb-0c9127ac449e%2Furl.jpg?1518407642926" position="-2.892 1.961 4.702" color="7BC8A4" height="1" width="0.5" length="0.5" shadow="" geometry="depth:3.1;height:1.5;width:0.15" rotation="0 0 90"></a-box>
+          <a-box src="https://cdn.glitch.com/0c455151-2e82-4a55-8abb-0c9127ac449e%2Furl.jpg?1518407642926" position="-2.907 1.401 5.716" color="7BC8A4" height="1" width="0.5" length="0.5" shadow="" geometry="depth:0.33;height:0.15;width:1.3" rotation="0 0 60"></a-box>
+          <a-box src="https://cdn.glitch.com/0c455151-2e82-4a55-8abb-0c9127ac449e%2Furl.jpg?1518407642926" position="-2.907 1.401 5.716" color="7BC8A4" height="1" width="0.5" length="0.5" shadow="" geometry="depth:0.33;height:0.15;width:1.3" rotation="0 0 -60"></a-box>
+          <a-box src="https://cdn.glitch.com/0c455151-2e82-4a55-8abb-0c9127ac449e%2Furl.jpg?1518407642926" position="-2.907 1.401 3.716" color="7BC8A4" height="1" width="0.5" length="0.5" shadow="" geometry="depth:0.33;height:0.15;width:1.3" rotation="0 0 60"></a-box>
+          <a-box src="https://cdn.glitch.com/0c455151-2e82-4a55-8abb-0c9127ac449e%2Furl.jpg?1518407642926" position="-2.907 1.401 3.716" color="7BC8A4" height="1" width="0.5" length="0.5" shadow="" geometry="depth:0.33;height:0.15;width:1.3" rotation="0 0 -60"></a-box>
+          <a-box src="https://cdn.glitch.com/0c455151-2e82-4a55-8abb-0c9127ac449e%2Fwood.jpg?1518761241758" position="-2.892 1.961 4.702" color="7BC8A4" height="1" width="0.5" length="0.5" shadow="" geometry="depth:3.1;width:0.15" rotation="0 0 90"></a-box>
+          <a-box src="https://cdn.glitch.com/0c455151-2e82-4a55-8abb-0c9127ac449e%2Furl.jpg?1518407642926" position="-2.892 1.961 4.702" color="7BC8A4" height="1" width="0.5" length="0.5" shadow="" geometry="depth:3.1;height:1.5;width:0.15" rotation="0 0 90"></a-box>
       </a-entity>
       
-      <a-box src="https://cdn.glitch.com/0c455151-2e82-4a55-8abb-0c9127ac449e%2FFridge.JPG?1518410053368" position="4.98 3.134 -6.63" color="7BC8A4" height="1" width="0.5" length="0.5" shadow="" geometry="depth:2.27;height:4.85;width:0.15"></a-box>
+      <a-entity position="-1 0.055 -1.211" scale="0.4 0.75 0.75">
+          <a-box src="https://cdn.glitch.com/0c455151-2e82-4a55-8abb-0c9127ac449e%2Furl.jpg?1518407642926" position="-2.907 1.401 5.716" color="7BC8A4" height="1" width="0.5" length="0.5" shadow="" geometry="depth:0.33;height:0.15;width:1.3" rotation="0 0 60"></a-box>
+          <a-box src="https://cdn.glitch.com/0c455151-2e82-4a55-8abb-0c9127ac449e%2Furl.jpg?1518407642926" position="-2.907 1.401 5.716" color="7BC8A4" height="1" width="0.5" length="0.5" shadow="" geometry="depth:0.33;height:0.15;width:1.3" rotation="0 0 -60"></a-box>
+          <a-box src="https://cdn.glitch.com/0c455151-2e82-4a55-8abb-0c9127ac449e%2Furl.jpg?1518407642926" position="-2.907 1.401 3.716" color="7BC8A4" height="1" width="0.5" length="0.5" shadow="" geometry="depth:0.33;height:0.15;width:1.3" rotation="0 0 60"></a-box>
+          <a-box src="https://cdn.glitch.com/0c455151-2e82-4a55-8abb-0c9127ac449e%2Furl.jpg?1518407642926" position="-2.907 1.401 3.716" color="7BC8A4" height="1" width="0.5" length="0.5" shadow="" geometry="depth:0.33;height:0.15;width:1.3" rotation="0 0 -60"></a-box>
+          <a-box src="https://cdn.glitch.com/0c455151-2e82-4a55-8abb-0c9127ac449e%2Fwood.jpg?1518761241758" position="-2.892 1.961 4.702" color="7BC8A4" height="1" width="0.5" length="0.5" shadow="" geometry="depth:3.1;width:0.15" rotation="0 0 90"></a-box>
+          <a-box src="https://cdn.glitch.com/0c455151-2e82-4a55-8abb-0c9127ac449e%2Furl.jpg?1518407642926" position="-2.892 1.961 4.702" color="7BC8A4" height="1" width="0.5" length="0.5" shadow="" geometry="depth:3.1;height:1.5;width:0.15" rotation="0 0 90"></a-box>
+        <a-animation attribute="position" 
+                     from="-1 0.055 -1.211"
+                     to="-3.5 0.055 -1.211"
+                     begin="click"></a-animation>
+      </a-entity>
+      
+
+      <a-box src="https://cdn.glitch.com/e6d99287-afea-45c8-9132-ae1efc6eccbc%2Fcieling%20fan.JPG?1519028081650" position="-1.553 6.868 1.744" color="7BC8A4" height="1" width="0.5" length="0.5" shadow="" geometry="height:0.001;width:4;depth:4" rotation="0 1440 0">
+      <a-animation attribute="rotation" dur="3000" to="0 2880 0" easing="linear" repeat="indefinite" begin="click"></a-animation>
+      </a-box>
+      
+      <a-box src="https://cdn.glitch.com/0c455151-2e82-4a55-8abb-0c9127ac449e%2FFridge.JPG?1518410053368" position="4.98 2.684 -6.63" color="7BC8A4" height="1" width="0.5" length="0.5" shadow="" geometry="depth:2.27;height:3.7;width:0.15"></a-box>
       <a-box src="https://cdn.glitch.com/0c455151-2e82-4a55-8abb-0c9127ac449e%2Fcabinet.JPG?1518410512511" position="1.684 1.533 -10.156" color="7BC8A4" height="1" width="0.5" length="0.5" shadow="" geometry="depth:0.29;height:1.41;width:6.67"></a-box>
       <a-box src="https://cdn.glitch.com/0c455151-2e82-4a55-8abb-0c9127ac449e%2Fgranite.jpg?1518498418073" position="1.714 2.153 -10.654" color="7BC8A4" height="1" width="0.5" length="0.5" shadow="" geometry="depth:1.25;height:0.2;width:6.67"></a-box>
       <a-box src="https://cdn.glitch.com/0c455151-2e82-4a55-8abb-0c9127ac449e%2FStove%20top.JPG?1518499792792" position="-0.639 2.215 -10.641" color="7BC8A4" height="1" width="0.5" length="0.5" shadow="" geometry="width:1.5699999999999998;depth:1.1199999999999999;height:0.08999999999999997"></a-box>
